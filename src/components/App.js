@@ -13,7 +13,7 @@ function App() {
   return (
     <div className={"App " + (isDarkMode ? "dark" : "light")}>
       {/* Refactoted Component goes here */}
-      <Header changeColorMode={handleDarkModeClick} isDarkMode={isDarkMode} />
+      <Header onDarkModeClick={handleDarkModeClick} isDarkMode={isDarkMode} />
       <ShoppingList items={itemData} />
     </div>
   );
